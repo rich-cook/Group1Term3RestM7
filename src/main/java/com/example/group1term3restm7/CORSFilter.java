@@ -9,10 +9,9 @@ import java.io.IOException;
 
 @Provider
 public class CORSFilter implements ContainerResponseFilter {
-    public CORSFilter() {
-    }
 
-    public void filter(ContainerRequestContext containerRequestContext, ContainerResponseContext containerResponseContext) throws IOException {
+        @Override
+        public void filter(ContainerRequestContext containerRequestContext, ContainerResponseContext containerResponseContext) throws IOException {
         containerResponseContext.getHeaders().add("Access-Control-Allow-Origin", "*");
         containerResponseContext.getHeaders().add("Access-Control-Allow-Headers", "origin, content-type, accept, authorization");
         containerResponseContext.getHeaders().add("Access-Control-Allow-Credentials", "true");
