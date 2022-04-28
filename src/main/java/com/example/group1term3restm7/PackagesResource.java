@@ -14,7 +14,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.List;
 
-@Path("/package")
+@Path("/")
 public class PackagesResource {
 
     public PackagesResource() {
