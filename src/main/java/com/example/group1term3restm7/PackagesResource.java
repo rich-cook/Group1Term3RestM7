@@ -2,6 +2,7 @@ package com.example.group1term3restm7;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import model.Package;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -103,6 +104,7 @@ public class PackagesResource {
             entityManager.getTransaction().commit();
             message = "{ 'message': 'Package was deleted' }";
         }
+        entityManager.close();
         return message;
     }
 }
