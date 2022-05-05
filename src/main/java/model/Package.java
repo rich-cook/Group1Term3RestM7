@@ -6,11 +6,14 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.sql.Date;
 
+import java.time.Instant;
+import java.time.LocalDateTime;
+
 @Entity
 @Table(name = "packages")
 public class Package {
     @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+// @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "PackageId", nullable = false)
     private Integer packageId;
 
