@@ -9,6 +9,14 @@ import java.sql.Date;
 import java.time.Instant;
 import java.time.LocalDateTime;
 
+/***
+ * By Richard Cook
+ * Generated Code
+ * Model data handling class for packages
+ * April 2022
+ *
+ *
+ */
 @Entity
 @Table(name = "packages")
 public class Package {
